@@ -1,0 +1,46 @@
+body {
+  overflow: visible;
+}
+
+.header {
+  background-color: #00ff04b0;
+  padding: 15px;
+  .nav {
+    .header_menu {
+      display: flex;
+      width: 100%;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        list-style: none;
+        color: #fff;
+        a {
+          color: #fff;
+        }
+      }
+      &_title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        font-weight: bold;
+      }
+      &_inner {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        .list {
+          font-family: "Font Awesome 5 Free";
+          content: "\f03a";
+          display: inline-block;
+          margin-left: 10px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

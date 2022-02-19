@@ -1,0 +1,19 @@
+<header class="header">
+  <nav class="nav">
+    <ul class="header_menu">
+      <li class="nav-link">テストさん</li>
+      <li class="header_menu_title"><%= link_to " TaskApp", root_path, class: "nav-link" %></li>
+      <li>
+        <ul class="header_menu_inner">
+          <li>
+            <%= link_to "#", class: "nav-link" do %>
+              <span>リストを作成 </span>
+              <i class="fa-regular fa-list"></i>
+            <% end %>
+          </li>
+          <li><%= link_to "サインアウト", "#", class: "nav-link" %></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+ </header>
