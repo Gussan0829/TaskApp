@@ -1,0 +1,12 @@
+<div class="listnewPage">
+  <div class="container">
+    <%= form_with model: @list, class: "new_list", local: true do |f| %>
+
+      <%= render 'shared/error_messages', model: f.object %>
+      
+      <%= f.label "リスト名" %><br>
+      <%= f.text_field :title, autofocus: true, class: "form-control listName", placeholder: "リスト名" %>
+      <div class="text-center"><%= f.submit "作成する", class: "submitBtn" %></div>
+    <% end %>
+  </div>
+</div>

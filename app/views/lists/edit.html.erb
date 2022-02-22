@@ -1,0 +1,12 @@
+<div class="listeditPage">
+  <div class="container">
+    <%= form_with model: @list, class: "new_list",local: true do |f| %>
+
+      <%= render 'shared/error_messages', model: f.object %>
+
+      <%= f.label :title %><br>
+      <%= f.text_field :title, class: "form-control listName", placeholder: "リスト名" %>
+      <div class="text-center"><%= f.submit "編集する", class: "submitBtn" %></div>
+    <% end %>
+  </div>
+</div>
