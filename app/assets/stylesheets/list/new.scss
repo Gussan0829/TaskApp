@@ -1,0 +1,41 @@
+.listnewPage {
+  .new_list {
+    max-width: 500px;
+    margin: 100px auto 0;
+  }
+}
+
+.new_list {
+  border: 2px solid #04ec07b0;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.listName {
+  width: 300px;
+  margin-left: 85px;
+}
+
+.submitBtn {
+  font-weight: 700;
+  line-height: 1.0;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: white;
+  border-radius: 10px;
+  border-color: rgb(0, 149, 255);
+  margin-top: 10px;
+  background-color: rgb(0, 149, 255);
+  margin-left: 150px;
+}
+
+
