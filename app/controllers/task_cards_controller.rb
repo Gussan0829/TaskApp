@@ -1,0 +1,2 @@
+class TaskCardsController < ApplicationController
+end
