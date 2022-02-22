@@ -28,17 +28,18 @@ body {
         transform: translate(-50%, -50%);
         font-size: 25px;
         font-weight: bold;
+        text-decoration: none;
       }
       &_inner {
         display: flex;
         padding: 0;
+        margin-right: 50px;
         align-items: center;
-        .list {
-          font-family: "Font Awesome 5 Free";
-          content: "\f03a";
-          display: inline-block;
-          margin-left: 10px;
+        text-decoration: none;
+        .fa-list-dropdown {
           font-size: 20px;
+          color: white;
+          margin-right: 50px;
         }
       }
     }
