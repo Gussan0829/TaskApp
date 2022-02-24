@@ -13,6 +13,10 @@ class TaskCardsController < ApplicationController
     end
   end
 
+  def show
+    @task_card = TaskCard.find(params[:id])
+  end
+
   private
   def task_card_params
     params.require(:task_card).permit(:title, :memo, :list_id)
