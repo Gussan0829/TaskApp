@@ -1,5 +1,5 @@
 class TaskCardsController < ApplicationController
-  before_action :set_task, only: [:show, :edit, :update]
+  before_action :set_task, only: [:show, :edit, :update, :destroy]
   
   def new
     @task_card = TaskCard.new
@@ -27,6 +27,11 @@ class TaskCardsController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+    @task_card.destroy
+    redirect_to root_path
   end
 
   private
