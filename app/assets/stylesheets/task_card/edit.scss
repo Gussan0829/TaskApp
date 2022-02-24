@@ -1,0 +1,22 @@
+.cardeditPage {
+  .cardeditForm {
+    max-width: 500px;
+    min-width: 300px;
+    margin: 70px auto 0;
+    border: 2px solid #04ec07b0;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    &_title {
+      margin-bottom: 30px;
+      margin-left: 30px;
+    }
+    &_memo {
+      margin-bottom: 30px;
+      margin-left: 30px;
+    }
+  }
+  .form-editTask {
+    width: 90%;
+  }
+}

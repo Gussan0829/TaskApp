@@ -64,9 +64,29 @@
           }
         }
       }
-      .cardDetail_link {
-        text-decoration: none;
-        color: #323232;
+      .pull-down-list{
+        padding: 15px 35px 15px 15px;
+        border: 1px solid #eee;
+      }
+      .hidden{
+        display: none;
+      }
+      .nav-lists {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+      }
+      .options{
+        padding-top: 17px;
+      }
+      .show-lists{
+        width: 100px;
+        position: absolute;
+        right: 370px;
+        top: 70px;
+        background-color: #ffffff;
       }
     }
   }
