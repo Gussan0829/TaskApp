@@ -38,11 +38,13 @@
       .cardWrapper {
         overflow-y: scroll;
         max-height: 76vh;
-        .addCard {
+      }
+      .addCard {
+        color: #8c8c8c;
+        margin-left: 55px;
+        margin-bottom: 10px;
+        &_link {
           color: #8c8c8c;
-          &_link {
-            color: #8c8c8c;
-          }
         }
       }
       .task {
