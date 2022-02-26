@@ -14,7 +14,9 @@
               <i class="fa-thin fa-list-dropdown"></i>
             <% end %>
           </li>
-          <li><%= link_to "サインアウト", destroy_user_session_path, class: "nav-link", method: :delete %></li>
+          <li>
+            <%= link_to "サインアウト", destroy_user_session_path, method: :delete, class: "nav-link" %>
+          </li>
         </ul>
       </li>
     </ul>
