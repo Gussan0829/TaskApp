@@ -28,14 +28,13 @@ body {
         transform: translate(-50%, -50%);
         font-size: 25px;
         font-weight: bold;
-        text-decoration: none;
+        font-family: Arial;
       }
       &_inner {
         display: flex;
         padding: 0;
         margin-right: 50px;
         align-items: center;
-        text-decoration: none;
         .fa-list-dropdown {
           font-size: 20px;
           color: white;
@@ -44,4 +43,8 @@ body {
       }
     }
   }
+}
+
+.nav-link {
+  text-decoration:none;
 }
