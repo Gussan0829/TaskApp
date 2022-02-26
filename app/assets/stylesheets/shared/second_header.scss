@@ -11,11 +11,16 @@
 .second-logo{
   font-size: 40px;
   text-decoration: none;
-  color: black;
   position: relative;
 }
 
 .fa-cubes {
   font-family: "Font Awesome 5 Free";
   content: "\f1b3";
+}
+
+.header-bottom {
+  text-decoration:none;
+  color: black;
+  border: 1px solid black;
 }
