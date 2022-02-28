@@ -72,10 +72,7 @@
           }
         }
       }
-      .pull-down-list{
-        text-decoration: none;
-        width: 50px;
-      }
+      
       .hidden{
         display: none;
       }
@@ -101,7 +98,13 @@
         list-style: none;
         position: absolute;
         margin: 0px;
-        border: 1px solid black;
+        padding-left: 10px;
+        border: 1px solid #00ff04b0;
+      }
+      .pull-down-list{
+        text-decoration: none;
+        width: 50px;
+        color: black;
 
       }
     }
