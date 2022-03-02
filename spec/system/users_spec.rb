@@ -59,9 +59,7 @@ RSpec.describe 'ログイン', type: :system do
       fill_in 'メールアドレス', with: ''
       fill_in 'パスワード', with: ''
       find('input[name="commit"]').click
-      expect(current_path).to eq(root_path)
-      expect(page).to have_no_content('新規登録')
-      expect(page).to have_no_content('ログイン')
+      expect(current_path).to eq(new_user_session_path)
     end
   end
 end
