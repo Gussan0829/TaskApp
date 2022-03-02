@@ -1,0 +1,10 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        nickname: ニックネーム
+      list:
+        title: タイトル
+      task_card:
+        title: タイトル
+        memo: メモ
