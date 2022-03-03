@@ -3,12 +3,13 @@
 # アプリケーション概要
 やるべき事をリスト化しリスト内にタスクを追加することができ、目標を管理することができる。
 # URL
+https://taskapp-37407.herokuapp.com/
 
 # テスト用アカウント
-・ Basic認証パスワード :
-・ Basic認証ID :
-・ メールアドレス :take_swim@icloud.com
-・ パスワード : xxxxxx
+・ Basic認証パスワード : admin
+・ Basic認証ID : 2222
+・ メールアドレス :test@test.com
+・ パスワード : 1234qwer
 
 
 # 利用方法
@@ -46,6 +47,11 @@ Javascript
 Visual Studio Code
 
 ## ローカルでの動作方法
+以下のコマンドを順に実行。
+% git clone https://taskapp-37407.herokuapp.com/
+% cd TaskApp
+% bundle install
+% yarn install
 
 ## 工夫したポイント
 リスト内に各タスクを含めるためにeachを二重に使ったところ。
