@@ -30,8 +30,10 @@
                 <li><%= link_to '編集ページ',edit_list_task_card_path(list, t), class:"pull-down-list" %></li>
               </ul>
               <% if t.memo.size > 0 %> 
-                <div class="task_detail is-exist">M:<%= t.memo %></div>
+                <div class="task_detail is-exist">メモ:<%= t.memo %></div>
               <% end %>
+              <%= check_box_tag :test1 %>
+              <%= label_tag :test1, "完了" %>
             </div>
           <% end %>
         </div>
