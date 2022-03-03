@@ -1,10 +1,15 @@
-.carddetailPage {
+.cardshowPage {
+  .cardcontents_top {
+    width: 150px;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
   .cardContents {
     margin: 60px auto 0;
     max-width: 600px;
     &_title {
       h2 {
-        font-size: 22px;
+        font-size: 20px;
       }
     }
     &_title, &_memo, &_listStatus {
@@ -19,7 +24,7 @@
         &.edit_btn {
           max-width: 200px;
           margin: 0 auto;
-          background: #026aa7;
+          background: #00a62c;
           padding: 7px;
           border-radius: 10px;
           color: #fff;
@@ -33,7 +38,7 @@
           margin: 0 auto;
           margin-top: 20px;
           max-width: 200px;
-          background: #026aa7;
+          background: #00a62c;
           padding: 7px;
           border-radius: 10px;
           color: #fff;
