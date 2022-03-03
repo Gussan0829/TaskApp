@@ -17,15 +17,19 @@
         <div class="cardWrapper">
           <% list.task_cards.each do |t| %>
             <div class="task", id ="list" >
-              <h3 class="task_title"><%= t.title %></h3>
+              <h3 class="task_title">
+                <%= t.title %>
+              </h3>
               <ul class="nav-lists">
-                <li class="options" id="lists"><i class="fas fa-bars"></i></li>
+                <li class="options" id="lists" >
+                  <i class="fas fa-bars" ></i>
+                </li>
               </ul>
               <ul class="show-lists hidden" id="pull-down">
                 <li><%= link_to '詳細ページ',list_task_card_path(list, t), class:"pull-down-list" %></li>
                 <li><%= link_to '編集ページ',edit_list_task_card_path(list, t), class:"pull-down-list" %></li>
-              </ul> 
-              <% if t.memo.size > 0 %>
+              </ul>
+              <% if t.memo.size > 0 %> 
                 <div class="task_detail is-exist">M:<%= t.memo %></div>
               <% end %>
             </div>
@@ -35,3 +39,4 @@
     <% end %>
   </div>
 </div>
+

@@ -7,6 +7,7 @@ class TaskCardsController < ApplicationController
   end
 
   def create
+    @list = List.find(params[:list_id])
     @task_card = TaskCard.new(task_card_params)
     if @task_card.save
       redirect_to root_path
@@ -22,6 +23,7 @@ class TaskCardsController < ApplicationController
   end
 
   def update
+    @list = List.find(params[:list_id])
     if @task_card.update(task_card_params)
       redirect_to root_path
     else
