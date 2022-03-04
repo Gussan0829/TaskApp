@@ -1,6 +1,5 @@
 function task (){
-  const pullDownButton = document.getElementsByClassName("options")
-  console.log(pullDownButton)
+  const pullDownButton = document.getElementById("lists")
   const pullDownParents = document.getElementById("pull-down")
   const pullDownTask = document.querySelectorAll(".task")
 
