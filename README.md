@@ -34,7 +34,7 @@ user（ログイン・会員登録）以外の結合テストコードの実装
 Reactを用いた、リスト間のタスク移動の実装
 
 ## テーブル設計
-[![Image from Gyazo](https://i.gyazo.com/6222f06b88cb09431236e99d99fda4bb.png)](https://gyazo.com/6222f06b88cb09431236e99d99fda4bb)
+[![Image from Gyazo](https://i.gyazo.com/51d3d4bdf0afbb3e0603e74890665672.png)](https://gyazo.com/51d3d4bdf0afbb3e0603e74890665672)
 
 ## 画面遷移図
 [![Image from Gyazo](https://i.gyazo.com/09b27a8601602e2d5d7c3f0fd263e320.png)](https://gyazo.com/09b27a8601602e2d5d7c3f0fd263e320)
