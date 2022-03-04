@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2022_02_22_150608) do
   create_table "task_cards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
     t.text "memo"
+    t.date "deadline"
     t.bigint "list_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

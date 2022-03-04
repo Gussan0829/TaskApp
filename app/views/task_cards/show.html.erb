@@ -15,6 +15,10 @@
         <div>メモ</div>
         <div><%= @task_card.memo %></div>
       </div>
+      <div class="cardContents_memo">
+        <div>期日</div>
+        <div><%= @task_card.deadline %></div>
+      </div>
 
       <div class="cardContents_btnArea">
         <%= link_to '編集する', edit_list_task_card_path(@task_card.list, @task_card), class: "edit_btn" %>

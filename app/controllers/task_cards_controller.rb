@@ -38,7 +38,7 @@ class TaskCardsController < ApplicationController
 
   private
   def task_card_params
-    params.require(:task_card).permit(:title, :memo, :list_id)
+    params.require(:task_card).permit(:title, :memo, :deadline, :list_id)
   end
 
   def set_task

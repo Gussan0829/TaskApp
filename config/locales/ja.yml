@@ -8,3 +8,4 @@ ja:
       task_card:
         title: タイトル
         memo: メモ
+        deadline: 期日
