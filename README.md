@@ -1,7 +1,7 @@
 #　アプリケーション名
  TaskApp
 # アプリケーション概要
-やるべき事をリスト化しリスト内にタスクを追加することがで、目標を管理することができる。
+やるべき事をリスト化しリスト内にタスクを追加することで、目標を管理することができる。
 # URL
 https://taskapp-37407.herokuapp.com/
 
@@ -24,12 +24,8 @@ https://taskapp-37407.herokuapp.com/
 # 洗い出した要件
 https://docs.google.com/spreadsheets/d/13w3s_mVOcbTj7saKojl5A2aDCTakkCZPiPtTCCndQhA/edit#gid=1785908763
 
-# 実装した機能についての画像やGIFおよびその説明
-〜〜画像やGIF、説明を記載〜〜
-
-##　実装予定の機能
+## 実装予定の機能
 Javascriptを用いた各タスク毎へのプルダウンボタン（編集ページ・詳細ページへの遷移）の実装
-目標の達成後、達成ボタンの実装（チェックボタンでも可）
 user（ログイン・会員登録）以外の結合テストコードの実装
 Reactを用いた、リスト間のタスク移動の実装
 
@@ -38,12 +34,15 @@ Reactを用いた、リスト間のタスク移動の実装
 
 ## 画面遷移図
 [![Image from Gyazo](https://i.gyazo.com/09b27a8601602e2d5d7c3f0fd263e320.png)](https://gyazo.com/09b27a8601602e2d5d7c3f0fd263e320)
+
 ## 開発環境
 Ruby
-Ruby on Rails 6.0.0
+HTML
+SCSS
+Javascript
+CSS
 MySQL
 GitHub
-Javascript
 Visual Studio Code
 
 ## ローカルでの動作方法
