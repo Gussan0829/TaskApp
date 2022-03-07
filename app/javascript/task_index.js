@@ -1,31 +1,29 @@
-function task (){
-  const pullDownButton = document.getElementById("lists")
-  const pullDownParents = document.getElementById("pull-down")
-  const pullDownTask = document.querySelectorAll(".task")
+function taskOption (){
+  const pullDownTasks = document.querySelectorAll(".task")
 
-  for (var i = 0; i < pullDownButton.length; i++) {
-    // pullDownButton[i].addEventListener('click', function() {
-      // console.log(pullDownButton[i])
-      // const test = document.querySelector("li[date=`${i}`]")
-      // console.log(test)
-      //   if (pullDownParents.getAttribute("style") == "display:block;") {
-      //     pullDownParents.removeAttribute("style", "display:block;")
-      //   } else {
-      //     pullDownParents.setAttribute("style", "display:block;")
-      //   }
-      // })
-
-  }
-
-  // for (var i = 0; i < task.pullDownTask.length; i++) {
+  pullDownTasks.forEach((pullDownTask)=>{
+    const pullDownButton = pullDownTask.querySelector('#lists')
+    const pullDownParent = pullDownTask.querySelector("#pull-down")
     pullDownButton.addEventListener('click', function() {
-      if (pullDownParents.getAttribute("style") == "display:block;") {
-        pullDownParents.removeAttribute("style", "display:block;")
-      } else {
-        pullDownParents.setAttribute("style", "display:block;")
-      }
-    })
-  
-};
+    if (pullDownParent.getAttribute("style") == "display:block;") {
+      pullDownParent.removeAttribute("style", "display:block;")
+    } else {
+      pullDownParent.setAttribute("style", "display:block;")
+    }
+  })
+})
+}
+window.addEventListener('load', taskOption);
 
-window.addEventListener('load', task);
+// function dragstart_handler(ev) {
+//   ev.dataTransfer.setData("text/plain", ev.target.id);
+// }
+
+// function taskCard (){
+//   const element = document.getElementById("list")
+
+//   element.addEventListener("dragstart", dragstart_handler)
+// };
+// window.addEventListener('load', taskCard);
+
+
