@@ -6,6 +6,8 @@
     "@rails/activestorage": "^6.0.0-alpha",
     "@rails/ujs": "^6.0.0-alpha",
     "@rails/webpacker": "4.3.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "turbolinks": "^5.2.0"
@@ -13,8 +15,28 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^4.7.4"
-    },  
-    "engines" : {
-      "node": "14.18.3"  
-    }
-   }
+  },
+  "engines": {
+    "node": "14.18.3"
+  },
+  "description": "TaskApp # アプリケーション概要 やるべき事をリスト化しリスト内にタスクを追加することで、目標を管理することができる。 # URL https://taskapp-37407.herokuapp.com/",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gussan0829/TaskApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gussan0829/TaskApp/issues"
+  },
+  "homepage": "https://github.com/Gussan0829/TaskApp#readme"
+}
