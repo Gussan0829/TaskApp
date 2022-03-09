@@ -1,7 +1,7 @@
 .topPage {
   min-height: 93vh;
   padding-top: 30px;
-  background: #bababa;
+  background: #f6f6f6;
   overflow-x: scroll;
   .listWrapper {
     display: flex;
@@ -9,11 +9,12 @@
     align-items: baseline;
     .list {
       position: relative;
-      background: #e2e4e6;
+      background: #d6d7d7;
       padding: 10px;
       margin-left: 20px;
       min-width: 250px;
       max-width: 300px;
+      border-radius: 10px;
       &:last-child {
         margin-right: 20px;
       }
@@ -100,6 +101,7 @@
         margin: 0px;
         padding-left: 10px;
         border: 1px solid #00ff04b0;
+        border-radius: 10px;
       }
       .pull-down-list{
         text-decoration: none;
