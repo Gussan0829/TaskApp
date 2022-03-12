@@ -15,14 +15,5 @@ function taskOption (){
 }
 window.addEventListener('load', taskOption);
 
-// function taskCard (){
-//   const pullDownTasks = document.querySelectorAll(".task")
-//   function dragstart_handler(ev) {
-//     ev.dataTransfer.setData("text/html", pullDownTasks);
-//   }
-//   pullDownTasks.addEventListener("dragstart", dragstart_handler)
-// };
-// window.addEventListener('load', taskCard);
-
 
 

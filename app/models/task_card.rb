@@ -3,4 +3,5 @@ class TaskCard < ApplicationRecord
   validates :memo,  length: { maximum: 1000 }, presence: true
 
   belongs_to :list
+  acts_as_list scope: :list
 end

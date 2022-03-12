@@ -4,6 +4,7 @@ class CreateTaskCards < ActiveRecord::Migration[6.0]
       t.string      :title, null: false
       t.text        :memo, limit: 1000
       t.date        :deadline
+      t.integer     :position
       t.references  :list, foreign_key: true,null: false
       t.timestamps
     end

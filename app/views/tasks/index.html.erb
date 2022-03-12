@@ -1,7 +1,7 @@
 <div class="topPage">
   <div class="listWrapper">
     <% @lists.each do |list| %>
-      <div class="list">
+      <div class="list" >
         <div class="list_header">
           <h2 class="list_header_title"><%= list.title %></h2>
           <div class="list_header_action">
@@ -15,35 +15,42 @@
             <%= link_to "タスクを追加", new_list_task_card_path(list), class: "addCard_link" %>
           </div>
         <div class="cardWrapper">
+        <ul id = "tasksList", class="tasksList">
           <% list.task_cards.each do |t| %>
-            <div class="task", id ="list" >
-              <h3 class="task_title">
-                <%= t.title %>
-              </h3>
-              <ul class="nav-lists">
-                <li class="options" id="lists" >
-                  <i class="fas fa-bars" ></i>
-                </li>
-              </ul>
-              <ul class="show-lists hidden" id="pull-down">
-                <li><%= link_to '詳細ページ',list_task_card_path(list, t), class:"pull-down-list" %></li>
-                <li><%= link_to '編集ページ',edit_list_task_card_path(list, t), class:"pull-down-list" %></li>
-              </ul>
-              <% if t.memo.size > 0 %> 
-                <div class="task_detail is-exist">メモ:<%= t.memo %></div>
-              <% end %>
-              <% if t.deadline.present? %>
-                <div class="task_detail is-exist">期日:<%= t.deadline %></div>
-              <% end %>
-              <div class="task_detail is-exist">
-                <%= check_box_tag :test1%>
-                <%= label_tag :test1, "完了" %>
+            <li class="taskCards">
+              <div class="task", id ="taskCard" >
+                <h3 class="task_title">
+                  <%= t.title %>
+                </h3>
+                <ul class="nav-lists">
+                  <li class="options" id="lists" >
+                    <i class="fas fa-bars" ></i>
+                  </li>
+                </ul>
+                <ul class="show-lists hidden" id="pull-down">
+                  <li><%= link_to '詳細ページ',list_task_card_path(list, t), class:"pull-down-list" %></li>
+                  <li><%= link_to '編集ページ',edit_list_task_card_path(list, t), class:"pull-down-list" %></li>
+                </ul>
+                <% if t.memo.size > 0 %> 
+                  <div class="task_detail is-exist">メモ:<%= t.memo %></div>
+                <% end %>
+                <% if t.deadline.present? %>
+                  <div class="task_detail is-exist">期日:<%= t.deadline %></div>
+                <% end %>
+                <div class="task_detail is-exist">
+                  <%= check_box_tag :test1%>
+                  <%= label_tag :test1, "完了" %>
+                </div>
               </div>
-            </div>
-          <% end %>
+            </li>
+          <% end %> 
+        </ul>
         </div>
       </div>
     <% end %>
   </div>
 </div>
+<script src="app/javascript/Sortable.js"></script>
+<script src="app/javascript/app.js"></script>
+
 
