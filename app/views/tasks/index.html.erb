@@ -15,7 +15,7 @@
             <%= link_to "タスクを追加", new_list_task_card_path(list), class: "addCard_link" %>
           </div>
         <div class="cardWrapper">
-        <ul id = "tasksList", class="tasksList">
+        <ul id = "sortable_list", class="tasksList">
           <% list.task_cards.each do |t| %>
             <li class="taskCards">
               <div class="task", id ="taskCard" >
